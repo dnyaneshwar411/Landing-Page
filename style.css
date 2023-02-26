@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5d5dff;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h4 {
+    display: inline-block;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#blackDesign {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#blackDesign::before,
+#blackDesign::after {
+    position: absolute;
+    content: '';
+    height: 376px;
+    width: 600px;
+    background-color: #000;
+    border-top-left-radius: 100vw;
+    border-bottom-left-radius: 100vw;
+}
+
+#blackDesign::before {
+    transform-origin: center;
+    right: -20%;
+    bottom: 60%;
+    transform: rotateZ(-45deg);
+}
+
+#blackDesign::after {
+    transform: rotateY(180deg) translate(35%, 125%);
+}
+
+#kkk {
+    padding: 3rem;
+    gap: 20px;
+    height: 40rem;
+}
+
+#kkk .card {
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    width: 389px;
+    height: 208px;
+    padding-inline: 30px;
+    transform: scale(0.9);
+}
+
+#kkk .card1 {
+    align-self: flex-start;
+}
+
+#kkk .card2 {
+    align-self: center;
+}
+
+#kkk .card3 {
+    align-self: flex-end;
+}
+
+#kkk .card::after {
+    content: '“';
+    font-size: 10rem;
+    font-weight: 700;
+    position: absolute;
+    left: 5%;
+    bottom: -55%;
+    z-index: 2;
+}
+
+#kkk .card p {
+    font-family: 'Inter';
+    text-align: left;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#kkk .card .personInfo {
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    left: -8%;
+    top: -15%;
+}
+
+#kkk .card .personInfo .personDetails {
+    color: #fff;
+    background-color: #000;
+    width: 311.25px;
+    height: 59.25px;
+    padding: 0.5rem;
+    top: -12%;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+#kkk .card .personInfo .personDetails .nameNdPost p {
+    margin-top: 0;
+    font-size: 0.5rem;
+}
+
+#kkk .card .personInfo .personDetails .testimonial {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0.3rem;
+}
